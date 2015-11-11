@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-    }
+int main(int argc, const char * argv[])
+{
+    int a,*p;
+    a=100;
+    p=&a;
+    printf("a=%x &a=%x &p=%x p=%x *p=%x\n",a,&a,&p,p,*p);
     return 0;
 }
